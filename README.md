@@ -1,6 +1,6 @@
 # Help Web Widget
 
-This is a reference project that demonstrate how to build web UI widget that can be embedded into 3rd party website. See walkthrough for details [here](https://blog.jenyay.com/web-ui-widget/).
+This is a reference project that demonstrate how to build web UI widget that can be embedded into 3rd party website. See walkthrough for details [here](n).
 
 ![](https://github.com/jenyayel/help-widget/workflows/CI/badge.svg?branch=master)
 
