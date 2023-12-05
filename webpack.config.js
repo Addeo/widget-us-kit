@@ -27,7 +27,7 @@ module.exports = (env) => {
         // packs SVG's discovered in url() into bundle
         { test: /\.svg/, use: 'svg-url-loader' },
         {
-          test: /\.css$/i,
+          test: /\.(css|sass|scss)$/i,
           use: [
             {
               loader: 'style-loader',
@@ -43,7 +43,17 @@ module.exports = (env) => {
                 },
                 sourceMap: isDevBuild
               }
-            }
+            },
+              {
+                  loader: 'sass-loader',
+                  options: {
+                      modules: {
+                          // css class names format
+                          localIdentName: '[name]-[local]-[hash:base64:5]'
+                      },
+                      sourceMap: isDevBuild
+                  }
+              }
           ]
         },
         // use babel-loader for TS and JS modeles,

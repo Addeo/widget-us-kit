@@ -28,7 +28,7 @@ const Main = () => {
 
     return (
         <div className={clsx(style.root, { [style.noDark]: config.disableDarkMode })}>
-            <div>
+            <div class={style['main-wrapper']}>
                 <TitleBar routeTitle={title} />
                 <div className={clsx(
                     style.container,
