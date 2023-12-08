@@ -49,6 +49,28 @@
         </pre>
     </code>
 
+	<p>
+		ADD POINT_ID FOR CUSTOMIZE!!!
+	</p>
+	<code>
+        <pre>
+&lt;script&gt;
+    (function (w, d, s, o, f, js, fjs) {
+        w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+        js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', 'aw1', './widget.js'));
+    aw1('init', { pointId: 14  });
+&lt;/script&gt;
+&lt;style&gt;
+    #widget-aw1 .main-root-3PoTs {
+        right: auto;
+        left: 10px
+    }
+&lt;/style&gt;
+        </pre>
+	</code>
+
     <p>
         To fire an event that handled inside widget, click <a href="javascript:;" onclick="_hw('event', 'open')">here to open</a>,
         and here <a href="javascript:;" onclick="_hw('event', 'close')">to close it</a>.
